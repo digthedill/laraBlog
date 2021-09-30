@@ -1,0 +1,40 @@
+*{
+    /* reset */
+    margin: 0;
+    padding: 0;
+    /* css variables */
+    --link-color: #bbdefb;
+}
+
+
+body {
+    max-width: 650px;
+    margin: auto;
+    font-family: sans-serif;
+    background: #222;
+    color: #f4f4f4;
+}
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+h1 {
+    color: var(--link-color);
+    font-size: 4rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+button, a, i {
+    outline: none;
+    background: none;   
+    border: none;
+    font-size: 1rem;
+}
