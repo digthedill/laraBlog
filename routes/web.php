@@ -17,13 +17,18 @@ use Illuminate\Support\Facades\Route;
 //get all posts
 
 Route::get('/', function () {
-    return view('posts', [
+    return view('pages/posts', [
         'posts' => Post::all(),
     ]);
 });
 
 Route::get('/posts/{post:slug}', function (Post $post) {
-    return view('post', [
+    return view('pages/post', [
         'post' => $post,
     ]);
+});
+
+
+Route::get('/admin', function () {
+    return view('pages/admin');
 });
